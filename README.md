@@ -1,15 +1,15 @@
 # Trade Parser
   This is a Node.js application that provides an API to upload a CSV file containing cryptocurrency trade data, parses the data, and stores it in a MongoDB database.
-# Prerequisites
+## Prerequisites
   - Node.js installed
   - MongoDB Atlas account
 # Installation:
-  # Clone the repository:
+  ## Clone the repository:
     git clone https://github.com/your-repo/crypto-trade-api.git
     cd crypto-trade-api
-  # Install dependencies:
+  ## Install dependencies:
     npm install
-  # Database Setup(Mongodb)
+  ## Database Setup(Mongodb)
     1. Create a MongoDB Atlas Account
       Sign Up:
       Go to MongoDB Atlas.
@@ -44,18 +44,18 @@
         mongodb+srv://<username>:<password>@<cluster-url>/test?retryWrites=true&w=majority
       Replace it with the string on line 13.
 # Usage:
-# Start the server:
+## Start the server:
   node server.js
  Use an API testing tool like Postman or cURL to upload a CSV file.
 
-# API Endpoints
-# POST /upload
-Upload a CSV file containing cryptocurrency trade data.
+## API Endpoints
+## POST /upload
+### Upload a CSV file containing cryptocurrency trade data.
   - URL: http://localhost:3000/upload 
   - Method: POST
   - Headers: Content-Type: multipart/form-data
   - Body: form-data with a key file and the CSV file as the value.
-# Response
+## Response
   - Success: 200 OK
     Body: File successfully processed and data stored in the database.
   - Failure: 400 Bad Request
