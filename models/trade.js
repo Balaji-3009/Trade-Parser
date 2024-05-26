@@ -10,6 +10,6 @@ const tradeSchema = new mongoose.Schema({
     market: { type: String, required: true }
 });
 
-const Trade = mongoose.model('Trade', tradeSchema);
+const trade = mongoose.model('trade', tradeSchema);
 
 module.exports = trade;
