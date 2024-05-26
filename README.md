@@ -57,8 +57,8 @@
   - Body: form-data with a key file and the CSV file as the value.
 ## Response
   - Success: 200 OK
-    Body: File successfully processed and data stored in the database.
+    - Body: File successfully processed and data stored in the database.
   - Failure: 400 Bad Request
-    Body: No file uploaded.
+    - Body: No file uploaded.
   - Error: 500 Internal Server Error
-    Body: Error storing data in the database: <error_message>
+    - Body: Error storing data in the database: <error_message>
