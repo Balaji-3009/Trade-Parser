@@ -1,4 +1,4 @@
-### Crypto Trade API
+## Trade Parser
  # This is a Node.js application that provides an API to upload a CSV file containing cryptocurrency trade data, parses the data, and stores it in a MongoDB database.
 # Prerequisites
   Node.js installed
