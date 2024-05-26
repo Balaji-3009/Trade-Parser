@@ -1,8 +1,8 @@
 ## Trade Parser
   This is a Node.js application that provides an API to upload a CSV file containing cryptocurrency trade data, parses the data, and stores it in a MongoDB database.
 # Prerequisites
-  Node.js installed
-  MongoDB Atlas account
+  - Node.js installed
+  - MongoDB Atlas account
 ## Installation:
   # Clone the repository:
     git clone https://github.com/your-repo/crypto-trade-api.git
