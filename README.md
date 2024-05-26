@@ -46,7 +46,7 @@
 # Usage:
 ## Start the server:
   node server.js
- Use an API testing tool like Postman or cURL to upload a CSV file.
+### Use an API testing tool like Postman or cURL to upload a CSV file.
 
 ## API Endpoints
 ## POST /upload
