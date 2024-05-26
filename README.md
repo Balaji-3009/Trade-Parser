@@ -10,11 +10,11 @@
   # Install dependencies:
     npm install
   ## Database Setup(Mongodb)
-    # 1. Create a MongoDB Atlas Account
+    1. Create a MongoDB Atlas Account
       Sign Up:
       Go to MongoDB Atlas.
       Sign up for an account if you don't have one. If you already have an account, log in.
-    # 2. Create a New Cluster
+    2. Create a New Cluster
       Create a New Cluster:
       After logging in, you'll be directed to the MongoDB Atlas dashboard.
       Click on the "Build a Cluster" button.
@@ -24,7 +24,7 @@
         Cluster Name: Give your cluster a name. You can leave the default name or choose a custom one.
         Create Cluster:
           Click "Create Cluster." It will take a few minutes for MongoDB to set up your cluster.
-    # 3. Configure Security
+    3. Configure Security
       Add Your IP Address:
       Go to the "Security" section in the left-hand menu and select "Network Access."
       Click on "Add IP Address."
@@ -34,7 +34,7 @@
       Click on "Add New Database User."
       Enter a username and password. You’ll use these credentials to connect to your database.
       Assign the user a role, typically "Atlas Admin" for full access.
-    # 4. Connect to Your Cluster
+    4. Connect to Your Cluster
       Get Connection String:
       Go to the "Clusters" section in the left-hand menu.
       Click on the "Connect" button for your cluster.
@@ -51,14 +51,14 @@
 ## API Endpoints
 # POST /upload
 Upload a CSV file containing cryptocurrency trade data.
-  URL: /upload
-  Method: POST
-  Headers: Content-Type: multipart/form-data
-  Body: form-data with a key file and the CSV file as the value.
+  - URL: http://localhost:3000/upload 
+  - Method: POST
+  - Headers: Content-Type: multipart/form-data
+  - Body: form-data with a key file and the CSV file as the value.
 # Response
-  Success: 200 OK
+  - Success: 200 OK
     Body: File successfully processed and data stored in the database.
-  Failure: 400 Bad Request
+  - Failure: 400 Bad Request
     Body: No file uploaded.
-  Error: 500 Internal Server Error
+  - Error: 500 Internal Server Error
     Body: Error storing data in the database: <error_message>
