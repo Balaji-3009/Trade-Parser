@@ -1,20 +1,20 @@
-##Crypto Trade API
-#This is a Node.js application that provides an API to upload a CSV file containing cryptocurrency trade data, parses the data, and stores it in a MongoDB database.
-Prerequisites
-Node.js installed
-MongoDB Atlas account
-Installation:
-  Clone the repository:
+### Crypto Trade API
+ # This is a Node.js application that provides an API to upload a CSV file containing cryptocurrency trade data, parses the data, and stores it in a MongoDB database.
+# Prerequisites
+  Node.js installed
+  MongoDB Atlas account
+## Installation:
+  # Clone the repository:
     git clone https://github.com/your-repo/crypto-trade-api.git
     cd crypto-trade-api
-  Install dependencies:
+  # Install dependencies:
     npm install
-  Database Setup(Mongodb)
-    1. Create a MongoDB Atlas Account
+  ## Database Setup(Mongodb)
+    # 1. Create a MongoDB Atlas Account
       Sign Up:
       Go to MongoDB Atlas.
       Sign up for an account if you don't have one. If you already have an account, log in.
-    2. Create a New Cluster
+    # 2. Create a New Cluster
       Create a New Cluster:
       After logging in, you'll be directed to the MongoDB Atlas dashboard.
       Click on the "Build a Cluster" button.
@@ -24,7 +24,7 @@ Installation:
         Cluster Name: Give your cluster a name. You can leave the default name or choose a custom one.
         Create Cluster:
           Click "Create Cluster." It will take a few minutes for MongoDB to set up your cluster.
-    3. Configure Security
+    # 3. Configure Security
       Add Your IP Address:
       Go to the "Security" section in the left-hand menu and select "Network Access."
       Click on "Add IP Address."
@@ -34,7 +34,7 @@ Installation:
       Click on "Add New Database User."
       Enter a username and password. You’ll use these credentials to connect to your database.
       Assign the user a role, typically "Atlas Admin" for full access.
-    4. Connect to Your Cluster
+    # 4. Connect to Your Cluster
       Get Connection String:
       Go to the "Clusters" section in the left-hand menu.
       Click on the "Connect" button for your cluster.
@@ -43,19 +43,19 @@ Installation:
       You'll be provided with a connection string. It looks something like this:
         mongodb+srv://<username>:<password>@<cluster-url>/test?retryWrites=true&w=majority
       Replace it with the string on line 13.
-Usage:
-Start the server:
+## Usage:
+# Start the server:
   node server.js
-Use an API testing tool like Postman or cURL to upload a CSV file.
+# Use an API testing tool like Postman or cURL to upload a CSV file.
 
-API Endpoints
-POST /upload
+## API Endpoints
+# POST /upload
 Upload a CSV file containing cryptocurrency trade data.
   URL: /upload
   Method: POST
   Headers: Content-Type: multipart/form-data
   Body: form-data with a key file and the CSV file as the value.
-Response
+# Response
   Success: 200 OK
     Body: File successfully processed and data stored in the database.
   Failure: 400 Bad Request
